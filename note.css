@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.hero{
+    display: flex;
+    background-color: #ebeef1;
+    height: 100vh;
+    width: 100%;
+}
+.note{
+    width: 900px;
+    height: 600px;
+    margin: 20px;
+    padding: 80px 30px 0px 30px;
+    background-color: #ebeef1;
+    font-size: 20px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    box-shadow: inset 10px 10px 10px -1px rgba(10, 99, 169, 0.16),
+                inset -10px -10px 10px -1px rgba(255,255,255,0.70);
+}
+.head{
+    color: #3d2800;
+    position: absolute;
+    left: 370px;
+    top: 40px;
+}
+.save{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background-color:  #ebeef1;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+    position: absolute;
+    bottom: 50px;
+    left: 750px;
+    box-shadow: 10px 10px 10px -1px rgba(10, 99, 169, 0.16),
+                 -10px -10px 10px -1px rgba(255,255,255,0.70);
+}
+.save:hover{
+    box-shadow: inset 10px 10px 10px -1px rgba(10, 99, 169, 0.16),
+                inset -10px -10px 10px -1px rgba(255,255,255,0.70);
+}
+.back{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background-color:  #ebeef1;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+    position: absolute;
+    bottom: 50px;
+    left: 1050px;
+    box-shadow: 10px 10px 10px -1px rgba(10, 99, 169, 0.16),
+                 -10px -10px 10px -1px rgba(255,255,255,0.70);
+}
+.back:hover{
+    box-shadow: inset 10px 10px 10px -1px rgba(10, 99, 169, 0.16),
+                inset -10px -10px 10px -1px rgba(255,255,255,0.70);
+}
+
+
+
+
+
+
+@media(max-width:900px){
+    .img{
+        display: none;
+    }
+    .back{
+        left: 20px;
+        bottom: 20px;
+    }
+    .head{
+        left: 50px;
+    }
+}
+
+
+
+@media(max-width:1188px){
+    .back{
+        left: 20px;
+        bottom: 20px;
+    }
+    .save{
+        left: 180px;
+        bottom: 20px;
+    }
+}

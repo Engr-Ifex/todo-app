@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-color: #ebeef1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.neu{
+    width: 200px;
+    height: 280px;
+    background-color: #ebeef1;
+    border-radius: 20px;
+    text-align: center;
+    margin: 40px;
+    cursor: pointer;
+    box-shadow: 10px 10px 10px -1px rgba(10, 99, 169, 0.16),
+                -10px -10px 10px -1px rgba(255,255,255,0.70);
+}
+.todo:hover{
+    box-shadow: inset 10px 10px 10px -1px rgba(10, 99, 169, 0.16),
+                inset -10px -10px 10px -1px rgba(255,255,255,0.70);
+}
+.note:hover{
+    box-shadow: inset 10px 10px 10px -1px rgba(10, 99, 169, 0.16),
+                inset -10px -10px 10px -1px rgba(255,255,255,0.70);
+}
+.clock:hover{
+    box-shadow: inset 10px 10px 10px -1px rgba(10, 99, 169, 0.16),
+                inset -10px -10px 10px -1px rgba(255,255,255,0.70);
+}
+.img1{
+    border-radius: 250px;
+    height: 120px;
+    object-fit: cover;
+    margin-top: 30px;
+}
+.img2{
+    border-radius: 250px;
+    margin-top: 30px;
+}
+.img3{
+    margin-top: 30px;
+    border-radius: 250px;
+}
+.txt1{
+    margin-top: 20px;
+    color: #3d2800;
+}
+.txt3{
+    margin-top: 20px;
+    color: #3d2800;
+}
+.txt5{
+    margin-top: 20px;
+    color: #3d2800;
+}
+.circle{
+    background-color: transparent;
+    height: 500px;
+    width: 500px;
+    border-radius: 250px;
+    position: absolute;
+    border: #fecf19 solid 30px;
+    left: -250px;
+    top: -180px;
+    box-shadow: 10px 10px 10px -1px rgba(10, 99, 169, 0.16),
+                -10px -10px 10px -1px rgba(255,255,255,0.70);
+}
+.c1{
+    background-color: transparent;
+    height: 500px;
+    width: 500px;
+    border-radius: 250px;
+    position: absolute;
+    border: #3d2800 solid 30px;
+    right: -250px;
+    bottom: -180px;
+    box-shadow: inset 10px 10px 10px -1px rgba(10, 99, 169, 0.16),
+                inset  -10px -10px 10px -1px rgba(255,255,255,0.70);
+}
+.logo{
+    color: #fecf19;
+    padding: 30px;
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.lg{
+    color: #3d2800;
+   
+}
+.tp{
+    color: #3d2800;
+    padding-right:20px;
+    font-size: 60px;
+    letter-spacing: 5px;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+}
+
+.tp1{
+    color: #fecf19;
+}
+.tp2{
+    color: #fecf19;
+}
+.greet{
+    color: #fecf19;
+    position: absolute;
+    top: 50px;
+}
+.g1{
+    color: #3d2800;
+}
+.chose{
+    position: absolute;
+    top: 100px;
+    color: #3d2800;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+.back{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background-color:  #ebeef1;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+    position: absolute;
+    bottom: 50px;
+    left: 1180px;
+    box-shadow: 10px 10px 10px -1px rgba(10, 99, 169, 0.16),
+                 -10px -10px 10px -1px rgba(255,255,255,0.70);
+}
+.back:hover{
+    box-shadow: inset 10px 10px 10px -1px rgba(10, 99, 169, 0.16),
+                inset -10px -10px 10px -1px rgba(255,255,255,0.70);
+}
+
+
+
+
+
+
+
+@media(max-width:900px){
+    .hero{
+        display: grid;
+    }
+    *{
+        overflow-y: visible;
+    }
+    .todo{
+        margin-top: 200px;
+    }
+    .greet{
+       /* padding-top: 30px;
+       padding-left: 40px;  */
+       position: relative;
+    }
+    .chose{
+        /* padding-top: 30px;
+       padding-left: 40px;  */
+       letter-spacing: 1px;
+       position: relative;
+    }
+    
+    .logo{
+        display: none;
+    }
+}
+
+@media(max-width:1120px){
+    .circle{
+        display: none;
+    }
+    .c1{
+        display: none;
+    }
+    .tp{
+        display: none;
+    }
+}
+
+@media(max-width:1319px){
+    .back{
+        left: 20px;
+        bottom: 20px;
+    }
+}
+

@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.hero{
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100%;
+    background-color: #ebeef1;
+}
+.container{
+    width: 900px;
+    height: 600px;
+    margin: 20px;
+    background-color: #ebeef1;
+    border-radius: 20px;
+    box-shadow: inset 10px 10px 10px -1px rgba(10, 99, 169, 0.16),
+                inset -10px -10px 10px -1px rgba(255,255,255,0.70);
+}
+.heading{
+    text-align: center;
+    color: #3d2800;
+    padding: 20px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ebeef1;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    margin-left: 20px;
+    margin-right: 70px;
+    box-shadow: 10px 10px 10px -1px rgba(10, 99, 169, 0.16),
+                -10px -10px 10px -1px rgba(255,255,255,0.70);
+}
+#inputtext{
+    flex: 1;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 10px;
+    font-weight: 14px;
+    font-size: 20px;
+}
+#btn{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background-color:  #fecf19;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+#btn:hover{
+    opacity: 0.8;
+}
+ul li{
+    list-style: none;
+    font-size: 20px;
+    padding: 12px 8px 12px 70px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50px;
+    background-image: url(./media/radio.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 30px;
+}
+.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+.checked::before{
+    background-image: url(./media/checkmark.png);
+}
+ul li span{
+    position: absolute;
+    right: 70px;
+    top: 5px;
+    width: 40px;
+    height: 42px;
+    font-size: 25px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 55px;
+}
+ul li span:hover{
+    background-color: #fdfdfd;
+}
+.back{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background-color:  #ebeef1;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+    position: absolute;
+    bottom: 50px;
+    left: 1050px;
+    box-shadow: 10px 10px 10px -1px rgba(10, 99, 169, 0.16),
+                 -10px -10px 10px -1px rgba(255,255,255,0.70);
+}
+.back:hover{
+    box-shadow: inset 10px 10px 10px -1px rgba(10, 99, 169, 0.16),
+                inset -10px -10px 10px -1px rgba(255,255,255,0.70);
+}
+
+
+
+
+
+
+@media(max-width:900px){
+    .img{
+        display: none;
+    }
+}
+
+@media(max-width:1188px){
+    .back{
+        left: 20px;
+        bottom: 20px;
+    }
+}

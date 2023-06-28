@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.hero{
+    text-align: center;
+    justify-content: space-between;
+    display: flex;
+    background-color: #ebeef1;
+    height: 100vh;
+    width: 100%;
+
+}
+.head{
+    padding-left: 200px;
+    padding-top: 20px;
+    color: #3d2800; 
+}
+.pre{
+    padding-left: 200px;
+}
+.container{
+    width: 500px;
+    height: 130px;
+    background-color: #ebeef1;
+    margin-left: 200px; 
+    margin-top: 50px;
+    box-shadow: inset 10px 10px 10px -1px rgba(10, 99, 169, 0.16),
+                inset -10px -10px 10px -1px rgba(255,255,255,0.70);
+}
+.display{
+    position: relative;
+    top: 30px;
+    font-size: 50px;
+}
+.btn{
+    width: 100px;
+    height: 50px;
+    margin: 30px;
+    position: relative;
+    left: 100px;
+    border: none;
+    cursor: pointer;
+    background-color: #ebeef1;
+    box-shadow: 10px 10px 10px -1px rgba(10, 99, 169, 0.16),
+                -10px -10px 10px -1px rgba(255,255,255,0.70);
+
+}
+
+.btn:hover{
+    box-shadow: inset 10px 10px 10px -1px rgba(10, 99, 169, 0.16),
+                inset -10px -10px 10px -1px rgba(255,255,255,0.70);
+}
+.back{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background-color:  #ebeef1;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+    position: absolute;
+    bottom: 50px;
+    left: 1050px;
+    box-shadow: 10px 10px 10px -1px rgba(10, 99, 169, 0.16),
+                 -10px -10px 10px -1px rgba(255,255,255,0.70);
+}
+.back:hover{
+    box-shadow: inset 10px 10px 10px -1px rgba(10, 99, 169, 0.16),
+                inset -10px -10px 10px -1px rgba(255,255,255,0.70);
+}
+
+
+
+
+
+
+@media(max-width:500px){
+    .container{
+        width: 350px;
+        height: 100px;
+    }
+    .display{
+        font-size: 40px;
+    }
+}
+
+
+@media(max-width:900px){
+    .img{
+        display: none;
+    }
+}
+
+
+@media(max-width:1217px){
+    .back{
+        left: 20px;
+        bottom: 20px;
+    }
+    .container{
+        margin-left: 20px;
+    }
+    .btn{
+        left: 10px;
+    }
+    .head{
+        padding-left: 20px;
+    }
+}

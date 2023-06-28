@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.bck{
+    background:linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.8)),no-repeat url(./media/todol.jpg);
+    height: 657px;
+    width: 1368px;
+    background-size: cover;
+}
+.logo{
+    color: #fecf19;
+    padding: 30px;
+    font-size: 30px;
+}
+.lg{
+    color: white;
+}
+.txt{
+    color: white;
+    text-align: center;
+    padding-top: 70px;
+    font-size: 60px;
+}
+h2{
+    color: #fecf19;
+    text-align: center;
+    letter-spacing: 3px;
+}
+.input{
+    text-align: center;
+    padding: 20px;
+}
+.name{
+    width: 500px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid white;
+    background-color: transparent;
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+}
+.button{
+    text-align: center;
+}
+.btn{
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #aa8903;
+    color: white;
+    border: none;
+    font-size: 20px;
+    font-weight:bold;
+    cursor: pointer;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+.tp{
+    color: white;
+    padding-right:20px;
+    font-size: 60px;
+    letter-spacing: 5px;
+}
+.tp1{
+    color: #fecf19;
+}
+.tp2{
+    color: #fecf19;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:500px){
+    .bck{
+        background:linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.8)),no-repeat url(./media/straight.jpg);
+        background-size: cover;
+        width: 500px;
+        height: 700px;
+    }
+    .txt{
+        text-align:justify;
+        padding-left: 20px;
+    }
+    h2{
+        text-align: justify;
+        padding-left: 20px;
+    }
+    .name{
+        width: 300px;
+    }
+    .input{
+        text-align: justify;
+    }
+    .button{
+        text-align: justify;
+        margin-left: 20px;
+    }
+
+}
+
+@media (max-width:952px){
+    .txt{
+        text-align:justify;
+        padding-left: 20px;
+    }
+    h2{
+        text-align: justify;
+        padding-left: 20px;
+    }
+    .name{
+        width: 300px;
+    }
+    .input{
+        text-align: justify;
+    }
+    .button{
+        text-align: justify;
+        margin-left: 20px;
+    }
+}
